@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#alerta {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(211, 211, 73);
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;    
+    position: fixed;
+    left: -170px;
+    top: 8px;
+    transition: left 300ms;
+}
+
+#alerta p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+#alerta button{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.btn-mostrar {
+    height: 40px;
+    width: 150px;
+    padding: 8px 10px;
+    border: none;
+    background-color: rgb(133, 13, 13);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer ;
+    position: fixed;
+    top: 30%;
+    left: 45%;
+}
+/* fará com que o CSS se sobrescreva */
+.mostrar {
+    left: 45% !important;
+}
